@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/jieshouqu" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="8sp"
+                android:id="@+id/btn_udpConn"
+                android:text="@string/jianlilianjie"
+                tools:ignore="RtlHardcoded,SmallSp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="8sp"
+                android:id="@+id/btn_udpClose"
+                android:text="@string/guanbilianjie"
+                tools:ignore="RtlHardcoded,SmallSp,SpUsage" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="8sp"
+                android:id="@+id/btn_CleanRecv"
+                android:text="@string/qingchujieshouqu"
+                tools:ignore="RtlHardcoded,SmallSp,SpUsage" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:layout_height="0dp"
+            android:id="@+id/txt_Recv"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/hex"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:text="@string/erjinzhi"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/shijinzhi"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/btn_a"
+                android:textSize="8sp"
+                tools:ignore="ButtonStyle,SmallSp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/btn_b"
+                android:textSize="8sp"
+                tools:ignore="ButtonStyle,SmallSp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/btn_c"
+                android:textSize="8sp"
+                tools:ignore="ButtonStyle,SmallSp"   />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/btn_d"
+                android:textSize="8sp"
+                tools:ignore="ButtonStyle,SmallSp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/fasongqu" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/border"
+            android:id="@+id/txt_Send"
+            android:layout_height="0dp" />
+    </LinearLayout>
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:orientation="horizontal"
+             android:layout_weight="2">
+             <CheckBox
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                 android:text="Hex显示"/>
+             <CheckBox
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+
+                 android:text="二进制显示"/>
+             <CheckBox
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                 android:text="十进制显示"/>
+
+         </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edit_Send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/border"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:id="@+id/btn_Send"
+                android:text="@string/fasong"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
